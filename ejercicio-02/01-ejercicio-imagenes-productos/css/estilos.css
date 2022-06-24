@@ -1,0 +1,94 @@
+@font-face {
+	font-family: Charcoal;		/* https://www.dafont.com/es/charcoal.font */
+	/* font-style: normal; */	/* No necesaria; definida por defecto */
+	font-weight: 400;
+	src:
+		local('Charcoal'), 
+		url('../fonts/Charcoal.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Lucida Grande';	/* https://www.wfonts.com/font/lucida-grande */
+	/* font-style: normal; */
+	font-weight: 400;
+	src:
+		local('Lucida Grande'),
+		url('../fonts/LucidaGrande.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Gadget;			/* https://www.dafont.com/gadget.font */
+	/* font-style: normal; */
+	font-weight: 400;
+	src:
+		local('Gadget'),
+		url('../fonts/gadget.ttf') format('truetype');
+}
+
+:root {
+	--color-cabecera: #698593;		/* Son exactos */
+	--color-fondo: #273238;
+	--color-parrafos: #D0D8DC;
+	--color-aspiradoras: #E6CBBF;
+	--color-celulares: #698593;
+	--color-consolas: #BCBDBF;
+	--color-home-theaters: #8D94A1;
+	--color-televisores: #B2B2AA;
+	background-color: var(--color-fondo);
+}
+
+p {
+	color: var(--color-parrafos);
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+h1 {
+	font-family: Impact, Charcoal, sans-serif;
+	color: var(--color-cabecera);
+	background-color: #FFFFFF;
+	font-size: 64px;
+	text-align: center;
+}
+
+h2::first-letter {					/* Primera letra ligeramente más grande */
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: Arial, Gadget, sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;		/* Mayúsculas sin alterar html */
+}
+
+img {
+	max-width: 500px;				/* Normalizando para todas + homes. */
+	margin-left: 42px;				/* Aproximado según encabezados. */
+	border: 4px solid;
+}
+
+.aspiradoras {
+	color: var(--color-aspiradoras);
+	border-color: var(--color-aspiradoras);
+}
+
+.celulares {
+	color: var(--color-celulares);
+	border-color: var(--color-celulares);
+}
+
+.consolas {
+	color: var(--color-consolas);
+	border-color: var(--color-consolas);
+}
+
+.home-theaters {
+	color: var(--color-home-theaters);
+	border-color: var(--color-home-theaters);
+}
+
+.televisores {
+	color: var(--color-televisores);
+	border-color: var(--color-televisores);
+}

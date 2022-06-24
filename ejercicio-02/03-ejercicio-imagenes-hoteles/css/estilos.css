@@ -1,0 +1,60 @@
+@font-face {
+	font-family: Geneva;
+	font-weight: 400;
+	src:
+		local('Geneva'),
+		url('../fonts/Geneva\ Regular.ttf') format('truetype');
+}
+
+:root {
+	--color-encabezados: #BB5397;
+	--color-parrafos: #3C63AE;
+	--ancho-logotipo: 480px;
+	font-family: 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
+}
+
+img {
+	max-width: var(--ancho-logotipo);
+}
+
+.logo {
+	transform: translateX(calc(50vw - var(--ancho-logotipo) / 2));
+}
+
+h1 {
+	color: var(--color-encabezados);
+	font-weight: 100;
+	font-size: 44px;
+	letter-spacing: 12px;
+	text-align: center;
+}
+
+h2 {
+	color: var(--color-encabezados);
+	font-weight: 400;
+	letter-spacing: 8px;
+	text-shadow: 1px 0 rgba(187, 83, 151, 0.596);	/* Alfa aproximado para un mejor acabado */
+}
+
+p {
+	color: var(--color-parrafos);
+	font-size: 14px;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
+}
+
+img:nth-of-type(even) {
+	float: right;
+	margin-left: 16px;
+}
+
+img:not(.logo, .footer-image):nth-of-type(odd) {
+	float: left;
+	margin-right: 16px;
+}
+
+.footer-image {
+	min-width: 100%;
+}
